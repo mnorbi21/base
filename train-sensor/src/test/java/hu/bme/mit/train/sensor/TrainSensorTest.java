@@ -1,19 +1,25 @@
 package hu.bme.mit.train.sensor;
 
-import org.junit.Assert;
+import hu.bme.mit.train.interfaces.TrainController;
+import hu.bme.mit.train.interfaces.TrainUser;
 import org.junit.Before;
 import org.junit.Test;
-import static org.mockito.Mockito.*;
+
+import static org.mockito.Mockito.mock;
 
 public class TrainSensorTest {
 
+    //TrainController controller;
+    //TrainUser user;
+
     @Before
     public void before() {
-        // TODO Add initializations
+        //user = mock(TrainUser.class);
+        //controller = mock(TrainController.class);
     }
 
     @Test
     public void ThisIsAnExampleTestStub() {
-        // TODO Delete this and add test cases based on the issues
+        //when(controller.setSpeedLimit();)
     }
 }
