@@ -22,6 +22,16 @@ public class TrainControllerImpl implements TrainController {
 		},500,1000);
 	}
 
+	public TrainControllerImpl() {
+		Timer timer = Timer();
+		timer.scheduleAtFixedRate(new TimerTask() {
+			@Override
+			public void run() {
+				followSpeed();
+			}
+		}, 1000, 500)
+	}
+
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {
